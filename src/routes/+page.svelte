@@ -17,27 +17,23 @@
 </style>
 
 
-<div id='encoded' class='w-full mb-2 lg:mr-1 lg:mb-0 lg:grow-1'>
+<div id='encoded' class='w-full mb-2 md:mr-1 md:mb-0 md:w-1/2'>
   <h2 class='text-center'>Encoded</h2>
   <textarea 
     bind:value={token}
     class='w-full min-h-25 border p-0.25 align-top'
   ></textarea>
 </div>
-<div id='decoded' class='w-full lg:grow-1'>
+<div id='decoded' class='w-full md:w-1/2 overflow-hidden'>
   <h2 class='text-center'>Decoded</h2>
   <div class='w-full min-h-25 border'>
     <div id='header' class='w-full min-h-5'>
       <div class='w-full bg-gray-300 pl-0.25 h-1.5'>Header</div>
       <pre class='pl-0.25 text-red-500 min-h-3.5 decode-view'>{decoded[0]}</pre>
     </div>
-    <div id='payload' class='w-full min-h-10'>
+    <div id='payload' class='w-full min-h-20'>
       <div class='w-full bg-gray-300 pl-0.25 h-1.5'>Payload</div>
-      <pre class='pl-0.25 text-green-500 min-h-8.5 decode-view'>{decoded[1]}</pre>
-    </div>
-    <div id='signature' class='w-full h-10'>
-      <div class='w-full bg-gray-300 pl-0.25 h-1.5'>Signature</div>
-      <div class='pl-0.25 text-blue-500 h-8.5 decode-view'>{decoded[2]}</div>
+      <pre class='pl-0.25 text-blue-500 min-h-18.5 decode-view'>{decoded[1]}</pre>
     </div>
   </div>
 </div>
